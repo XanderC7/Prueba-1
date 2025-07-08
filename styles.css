@@ -1,0 +1,78 @@
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Asegura que no haya márgenes predeterminados en el cuerpo */
+  padding: 0; /* Asegura que no haya padding predeterminados en el cuerpo */
+}
+
+.header {
+  border: 5px solid rgb(238, 206, 28); /* Borde rojo visible */
+  padding: 15px;
+  text-align: center; /* Centra el texto */
+  background-color: #babbba9c; /* Un color de fondo claro para el header y el footer */
+  margin-bottom: 10px; /* Un poco de espacio debajo del header */
+}
+
+.footer-style {
+  margin-top: 10px; /* Un poco de espacio encima del footer */
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Estilos para todas las columnas */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  min-height: 100px; /* Añadido un min-height para que las cajas se vean incluso si el contenido es corto */
+}
+
+/* Definición de los anchos de las columnas para escritorio (mayormente) */
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Estilos específicos del menú */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgb(10, 141, 228);
+  color: white;
+}
+
+.menu li:hover {
+  background-color: rgb(169, 148, 197);
+}
+
+/* Media Query para dispositivos móviles: Las columnas se apilan (ocupan el 100%) */
+/* Esto es crucial para la responsividad en móviles y lo que "corrige" la visualización en pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%; /* En pantallas pequeñas, todas las columnas ocupan el 100% del ancho */
+  }
+}
