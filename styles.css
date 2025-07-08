@@ -6,16 +6,23 @@ html {
   box-sizing: border-box;
 }
 
+/* Regla para que las imágenes sean responsivas */
+img {
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto;    /* Mantiene la proporción de la imagen al cambiar el ancho */
+}
+
 body {
   margin: 0; /* Asegura que no haya márgenes predeterminados en el cuerpo */
   padding: 0; /* Asegura que no haya padding predeterminados en el cuerpo */
 }
 
 .header {
-  border: 5px solid rgb(238, 206, 28); /* Borde rojo visible */
+  border: 3px solid #D4AF37; /* Borde visible */
   padding: 15px;
+  color: white;
   text-align: center; /* Centra el texto */
-  background-color: #babbba9c; /* Un color de fondo claro para el header y el footer */
+  background-color: #4A6B8A; /* Un color de fondo para el header y el footer */
   margin-bottom: 10px; /* Un poco de espacio debajo del header */
 }
 
@@ -61,7 +68,7 @@ body {
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
-  background-color: rgb(10, 141, 228);
+  background-color: rgb(13, 78, 121);
   color: white;
 }
 
