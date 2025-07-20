@@ -48,24 +48,52 @@
 </div>
 
 <div class="row">
-  <div class="col-6">
-    <h3>Promociones del Mes</h3>
-    <p>¡Descuentos especiales en literatura bíblica y materiales de estudio!</p>
-    <ul>
-      <li>50% Dto. en concordancias</li>
-      <li>Libros de teología al 20%</li>
-    </ul>
-  </div>
-  <div class="col-6">
-    <h3>Contenido Más Visto</h3>
-    <p>Explora los temas más populares entre nuestros visitantes.</p>
-    <ul>
-      <li>Sermones sobre el Amor</li>
-      <li>Estudios sobre la Fe</li>
-      <li>Reflexiones diarias</li>
-    </ul>
+  <div class="col-12">     <div class="registro-container">
+      <h2>Registro</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" name="nombres" placeholder="Your name.." required>
+        </div>
+
+        <div class="form-group">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Your last name.." required>
+        </div>
+
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha nacimiento</label>
+          <input type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder="dd/mm/aaaa" required>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="">Seleccione el país...</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Mexico">México</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Spain">España</option>
+                      </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="submit" class="register-button">Registrar</button>
+      </form>
+    </div>
   </div>
 </div>
+
 
 <div class="header footer-style">
   <p>&copy; 2025 Sitio Bíblico. Todos los derechos reservados.</p>
